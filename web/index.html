@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pizza Mart</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='../css/rotating-card.css' rel='stylesheet' />
+        <script
+                src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+                integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+    </head>
+    <body background="../img/wood-fired-oven-1230408_1920.jpg">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><h3>Pizza Mart</h3></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="WEB-INF"><h3>Home</h3></a></li>
+                <li><a href="About"><h3>About</h3></a></li>
+            </ul>
+        </div>
+    </nav>
+        <div>
+            <form>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="col-sm-4">
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="cover">
+                                                <img src="../img/pizza-232818_640.jpg"/>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h3 class="name">Margherita Pizza</h3>
+                                                    <p class="profession">The 19th century classic</p>
+                                                    <p class="text-center">Francesco De Bourcard's pizza special described in "Usi e costumi di Napoli e contorni descritti e dipinti."</p>
+                                                </div>
+                                                <div class="footer">
+                                                    <i class="fa fa-mail-forward"></i> Flip to see prices!
+                                                </div>
+                                            </div>
+                                        </div> <!-- end front panel -->
+                                        <div class="back">
+                                            <div class="header">
+                                                <h5 class="motto">Our pizza is made with only the finest, freshest ingredients!</h5>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h4 class="text-center">Sizes</h4>
+                                                    <p class="text-center">Our pies come in small medium or large</p>
+
+                                                    <div class="stats-container">
+                                                        <div class="stats">
+                                                            <h4>$10</h4>
+                                                            <p>
+                                                                <a id="mPizzaSmall">Small</a>
+                                                            </p>
+                                                        </div>
+                                                        <div id="stats">
+                                                            <h4>$14</h4>
+                                                            <p>
+                                                                <a id="mPizzaMedium">Medium</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stats">
+                                                            <h4>$17</h4>
+                                                            <p>
+                                                                <a id="mPizzaLrg">Large</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="footer">
+
+                                            </div>
+                                        </div> <!-- end back panel -->
+                                    </div> <!-- end card -->
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="cover">
+                                                <img src="../img/pizza-1452329_640.jpg"/>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h3 class="name">Pepperoni Pizza</h3>
+                                                    <p class="profession">The American classic</p>
+                                                    <p class="text-center">"Like Jazz and baseball, pepperoni is purely an American invention."</p>
+                                                </div>
+                                                <div class="footer">
+                                                    <i class="fa fa-mail-forward"></i> Flip to see prices!
+                                                </div>
+                                            </div>
+                                        </div> <!-- end front panel -->
+                                        <div class="back">
+                                            <div class="header">
+                                                <h5 class="motto">Our pizza is made with only the finest, freshest ingredients!</h5>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h4 class="text-center">Sizes</h4>
+                                                    <p class="text-center">Our pies come in small medium or large</p>
+
+                                                    <div class="stats-container">
+                                                        <div class="stats">
+                                                            <h4>$13</h4>
+                                                            <p>
+                                                                <a class="pepS">Small</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stats">
+                                                            <h4>$17</h4>
+                                                            <p>
+                                                                <a class="pepM">Medium</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stats">
+                                                            <h4>$20</h4>
+                                                            <p>
+                                                                <a class="pepL">Large</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="footer">
+
+                                            </div>
+                                        </div> <!-- end back panel -->
+                                    </div> <!-- end card -->
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="cover">
+                                                <img src="../img/pizza-329523_640.jpg"/>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h3 class="name">Quattro Stagioni</h3>
+                                                    <p class="profession">The four seasons</p>
+                                                    <p class="text-center">Four distinct flavors: Marinara. Italian sausage, smoked prosciutto, mushrooms,
+                                                        kalamata olives, provolone, and parmesan.</p>
+                                                </div>
+                                                <div class="footer">
+                                                    <i class="fa fa-mail-forward"></i> Flip to see prices!
+                                                </div>
+                                            </div>
+                                        </div> <!-- end front panel -->
+                                        <div class="back">
+                                            <div class="header">
+                                                <h5 class="motto">Our pizza is made with only the finest, freshest ingredients!</h5>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h4 class="text-center">Sizes</h4>
+                                                    <p class="text-center">Our pies come in small medium or large</p>
+
+                                                    <div class="stats-container">
+                                                        <div class="stats">
+                                                            <h4>$14</h4>
+                                                            <p>
+                                                                <a>Small</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stats">
+                                                            <h4>$18</h4>
+                                                            <p>
+                                                                <a>Medium</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stats">
+                                                            <h4>$23</h4>
+                                                            <p>
+                                                                <a>Large</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="footer">
+
+                                            </div>
+                                        </div> <!-- end back panel -->
+                                    </div> <!-- end card -->
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="cover">
+                                                <img src="../img/appetite-1239428_640.jpg"/>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h3 class="name">Spicy Monkey</h3>
+                                                    <p class="profession"><b>(HOT!)</b></p>
+                                                    <p class="text-center">Marinara with garlic and cayenne pepper, pepperoni, red onion, jalapeno, and smoked
+                                                        mozzarella.</p>
+                                                </div>
+                                                <div class="footer">
+                                                    <i class="fa fa-mail-forward"></i> Flip to see prices!
+                                                </div>
+                                            </div>
+                                        </div> <!-- end front panel -->
+                                        <div class="back">
+                                            <div class="header">
+                                                <h5 class="motto">Our pizza is made with only the finest, freshest ingredients!</h5>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h4 class="text-center">Sizes</h4>
+                                                    <p class="text-center">Our pies come in small medium or large</p>
+
+                                                    <div class="stats-container">
+                                                        <div class="stats">
+                                                            <h4>$14</h4>
+                                                            <p>
+                                                                <a>Small</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stats">
+                                                            <h4>$18</h4>
+                                                            <p>
+                                                                <a>Medium</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stats">
+                                                            <h4>$23</h4>
+                                                            <p>
+                                                                <a>Large</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="footer">
+
+                                            </div>
+                                        </div> <!-- end back panel -->
+                                    </div> <!-- end card -->
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card-container">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="cover">
+                                                <img src="../img/coca-cola-180898_640.jpg"/>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h3 class="name">Drinks</h3>
+                                                    <p class="profession">Quench your thirst with our fine selection of Coca Cola products</p>
+                                                </div>
+                                                <div class="footer">
+                                                    <i class="fa fa-mail-forward"></i> Flip to see prices!
+                                                </div>
+                                            </div>
+                                        </div> <!-- end front panel -->
+                                        <div class="back">
+                                            <div class="header">
+                                                <h5 class="motto">Soda, pop, fizzy, whatever you call it, we've got something that will tickle your fancy.</h5>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h4 class="text-center">Sizes</h4>
+                                                    <p class="text-center">Our drinks come in small medium or large sizes</p>
+
+                                                    <div class="stats-container">
+                                                        <div class="stats">
+                                                            <h4>99&cent;</h4>
+                                                            <p>
+                                                                <a>Small</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stats">
+                                                            <h4>$1.50</h4>
+                                                            <p>
+                                                                <a>Medium</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stats">
+                                                            <h4>$2.00</h4>
+                                                            <p>
+                                                                <a>Large</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="footer">
+
+                                            </div>
+                                        </div> <!-- end back panel -->
+                                    </div> <!-- end card -->
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="container-fluid">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="cover">
+                                                <img src="https://www.dash.org/wp-content/uploads/2015/06/dash_square_bevel_normal.png"/>
+                                            </div>
+                                            <div class="content">
+                                                <div class="main">
+                                                    <h3 class="name">Drinks</h3>
+                                                    <p class="profession">Quench your thirst with our fine selection of Coca Cola products</p>
+                                                </div>
+                                                <div class="footer">
+                                                    <i class="fa fa-mail-forward"></i> Flip to see prices!
+                                                </div>
+                                            </div>
+                                        </div> <!-- end front panel -->
+                                    </div> <!-- end card -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!--  <input type="button" value="Order" style="margin-top: 5px" /> -->
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+            //card flipper
+            $().ready(function(){
+                $('[rel="tooltip"]').tooltip();
+
+            });
+
+            function rotateCard(btn){
+                var $card = $(btn).closest('.card-container');
+                console.log($card);
+                if($card.hasClass('hover')){
+                    $card.removeClass('hover');
+                } else {
+                    $card.addClass('hover');
+                }
+            }
+            //variables for menu
+            var order = {
+                mPizzaS : 0,
+                mPizzaM : 0,
+                mPizzaL : 0,
+                pepperS:0,
+                pepperM:0,
+                pepperL:0,
+
+            };
+           function update (order){
+               $('mPizzaSmall').click(
+                    +order.mPizzaS + +1
+               );
+               $('mPizzaMedium').click(
+                    +order.mPizzaM + +1
+               );
+               $('mPizzaLrg').click(
+                    +order.mPizzaL +1
+               );
+           }
+        </script>
+    </body>
+</html>
