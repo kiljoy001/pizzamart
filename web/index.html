@@ -71,22 +71,23 @@ and open the template in the editor.
                                                         <div class="stats">
                                                             <h4>$10</h4>
                                                             <p>
-                                                                <a id="mPizzaSmall">Small</a>
+                                                                <a class="marS">Small</a>
                                                             </p>
                                                         </div>
-                                                        <div id="stats">
+                                                        <div class="stats">
                                                             <h4>$14</h4>
                                                             <p>
-                                                                <a id="mPizzaMedium">Medium</a>
+                                                                <a class="marM">Medium</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$17</h4>
                                                             <p>
-                                                                <a id="mPizzaLrg">Large</a>
+                                                                <a class="marL">Large</a>
                                                             </p>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                             <div class="footer">
@@ -378,14 +379,26 @@ and open the template in the editor.
 
             };
            function update (order){
-               $('mPizzaSmall').click(
+               $('marS').click(
                     +order.mPizzaS + +1
                );
-               $('mPizzaMedium').click(
+               $('marM').click(
                     +order.mPizzaM + +1
                );
-               $('mPizzaLrg').click(
+               $('marL').click(
                     +order.mPizzaL +1
+               );
+               $('pepS').click(
+                   +order.pepperS + +1
+               );
+               $('pepM').click(
+                   +order.pepperM + +1
+               );
+               $('pepL').click(
+                   +order.pepperL + +1
+               );
+               $('').click(
+                   +order.mPizzaS + +1
                );
            }
         </script>
