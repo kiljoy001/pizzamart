@@ -186,19 +186,19 @@ and open the template in the editor.
                                                         <div class="stats">
                                                             <h4>$14</h4>
                                                             <p>
-                                                                <a>Small</a>
+                                                                <a class="stagS">Small</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$18</h4>
                                                             <p>
-                                                                <a>Medium</a>
+                                                                <a class="stagM">Medium</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$23</h4>
                                                             <p>
-                                                                <a>Large</a>
+                                                                <a class="stagL">Large</a>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -244,19 +244,19 @@ and open the template in the editor.
                                                         <div class="stats">
                                                             <h4>$14</h4>
                                                             <p>
-                                                                <a>Small</a>
+                                                                <a class="spiceS">Small</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$18</h4>
                                                             <p>
-                                                                <a>Medium</a>
+                                                                <a class="spiceM">Medium</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$23</h4>
                                                             <p>
-                                                                <a>Large</a>
+                                                                <a class="spiceL">Large</a>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -376,6 +376,12 @@ and open the template in the editor.
                 pepperS:0,
                 pepperM:0,
                 pepperL:0,
+                stagioniS:0,
+                stagioniM:0,
+                stagioniL:0,
+                spicyS: 0,
+                spicyM: 0,
+                spicyL: 0
 
             };
            function update (order){
@@ -397,8 +403,23 @@ and open the template in the editor.
                $('pepL').click(
                    +order.pepperL + +1
                );
-               $('').click(
-                   +order.mPizzaS + +1
+               $('stagS').click(
+                   +order.stagioniS + +1
+               );
+               $('stagM').click(
+                   +order.stagioniM + +1
+               );
+               $('stagL').click(
+                   +order.stagioniL + +1
+               );
+               $('spiceS').click(
+                   +order.stagioniS + +1
+               );
+               $('spiceM').click(
+                   +order.stagioniM + +1
+               );
+               $('spiceL').click(
+                   +order.stagioniL + +1
                );
            }
         </script>
