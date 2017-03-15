@@ -9,10 +9,7 @@ and open the template in the editor.
         <title>Pizza Mart</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script
-                src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-                integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-                crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  crossorigin="anonymous"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
@@ -77,13 +74,13 @@ and open the template in the editor.
                                                         <div class="stats">
                                                             <h4>$14</h4>
                                                             <p>
-                                                                <a class="marM">Medium</a>
+                                                                <a class="marM" onclick="update(order)">Medium</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$17</h4>
                                                             <p>
-                                                                <a class="marL">Large</a>
+                                                                <a class="marL" onclick="update(order)">Large</a>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -128,19 +125,19 @@ and open the template in the editor.
                                                         <div class="stats">
                                                             <h4>$13</h4>
                                                             <p>
-                                                                <a class="pepS">Small</a>
+                                                                <a class="pepS" onclick="update(order)">Small</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$17</h4>
                                                             <p>
-                                                                <a class="pepM">Medium</a>
+                                                                <a class="pepM" onclick="update(order)">Medium</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$20</h4>
                                                             <p>
-                                                                <a class="pepL">Large</a>
+                                                                <a class="pepL" onclick="update(order)">Large</a>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -186,19 +183,19 @@ and open the template in the editor.
                                                         <div class="stats">
                                                             <h4>$14</h4>
                                                             <p>
-                                                                <a class="stagS">Small</a>
+                                                                <a class="stagS" onclick="update(order)">Small</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$18</h4>
                                                             <p>
-                                                                <a class="stagM">Medium</a>
+                                                                <a class="stagM" onclick="update(order)">Medium</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$23</h4>
                                                             <p>
-                                                                <a class="stagL">Large</a>
+                                                                <a class="stagL" onclick="update(order)">Large</a>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -244,19 +241,19 @@ and open the template in the editor.
                                                         <div class="stats">
                                                             <h4>$14</h4>
                                                             <p>
-                                                                <a class="spiceS">Small</a>
+                                                                <a class="spiceS" onclick="update(order)">Small</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$18</h4>
                                                             <p>
-                                                                <a class="spiceM">Medium</a>
+                                                                <a class="spiceM" onclick="update(order)">Medium</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$23</h4>
                                                             <p>
-                                                                <a class="spiceL">Large</a>
+                                                                <a class="spiceL" onclick="update(order)">Large</a>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -300,19 +297,19 @@ and open the template in the editor.
                                                         <div class="stats">
                                                             <h4>99&cent;</h4>
                                                             <p>
-                                                                <a class="drinkS">Small</a>
+                                                                <a class="drinkS" onclick="update(order)">Small</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$1.50</h4>
                                                             <p>
-                                                                <a class="drinkM">Medium</a>
+                                                                <a class="drinkM" onclick="update(order)">Medium</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$2.00</h4>
                                                             <p>
-                                                                <a class="drinkL">Large</a>
+                                                                <a class="drinkL" onclick="update(order)">Large</a>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -387,49 +384,49 @@ and open the template in the editor.
             order.drinkL = 0;
             function update (order){
                $('marS').click(
-                    +order.mPizzaS + +1
+                    order.mPizzaS = +order.mPizzaS + +1
                );
                $('marM').click(
-                    +order.mPizzaM + +1
+                   order.mPizzaM = +order.mPizzaM + +1
                );
                $('marL').click(
-                    +order.mPizzaL +1
+                   order.mPizzaL = +order.mPizzaL +1
                );
                $('pepS').click(
-                   +order.pepperS + +1
+                   order.pepperS = +order.pepperS + +1
                );
                $('pepM').click(
-                   +order.pepperM + +1
+                   order.pepperM = +order.pepperM + +1
                );
                $('pepL').click(
-                   +order.pepperL + +1
+                   order.pepperL = +order.pepperL + +1
                );
                $('stagS').click(
-                   +order.stagioniS + +1
+                   order.stagioniS = +order.stagioniS + +1
                );
                $('stagM').click(
-                   +order.stagioniM + +1
+                   order.stagioniM = +order.stagioniM + +1
                );
                $('stagL').click(
-                   +order.stagioniL + +1
+                   order.stagioniL = +order.stagioniL + +1
                );
                $('spiceS').click(
-                   +order.stagioniS + +1
+                   order.stagioniS = +order.stagioniS + +1
                );
                $('spiceM').click(
-                   +order.stagioniM + +1
+                   order.stagioniM = +order.stagioniM + +1
                );
                $('spiceL').click(
-                   +order.stagioniL + +1
+                   order.stagioniL = +order.stagioniL + +1
                );
                $('drinkS').click(
-                   +order.drinkS + +1
+                   order.drinkS = +order.drinkS + +1
                );
                $('drinkM').click(
-                   +order.drinkM + +1
+                   order.drinkM = +order.drinkM + +1
                );
                $('drinkL').click(
-                   +order.drinkL + +1
+                   order.drinkL = +order.drinkL + +1
                );
            }
         </script>
