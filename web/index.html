@@ -9,14 +9,14 @@ and open the template in the editor.
         <title>Pizza Mart</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-        <link href='../css/rotating-card.css' rel='stylesheet' />
         <script
                 src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
                 integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
                 crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='../css/rotating-card.css' rel='stylesheet' />
     </head>
     <body background="../img/wood-fired-oven-1230408_1920.jpg">
     <nav class="navbar navbar-default">
@@ -71,7 +71,7 @@ and open the template in the editor.
                                                         <div class="stats">
                                                             <h4>$10</h4>
                                                             <p>
-                                                                <a class="marS">Small</a>
+                                                                <a class="marS" onclick="update(order)">Small</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
@@ -300,19 +300,19 @@ and open the template in the editor.
                                                         <div class="stats">
                                                             <h4>99&cent;</h4>
                                                             <p>
-                                                                <a>Small</a>
+                                                                <a class="drinkS">Small</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$1.50</h4>
                                                             <p>
-                                                                <a>Medium</a>
+                                                                <a class="drinkM">Medium</a>
                                                             </p>
                                                         </div>
                                                         <div class="stats">
                                                             <h4>$2.00</h4>
                                                             <p>
-                                                                <a>Large</a>
+                                                                <a class="drinkL">Large</a>
                                                             </p>
                                                         </div>
                                                     </div>
@@ -369,22 +369,23 @@ and open the template in the editor.
                 }
             }
             //variables for menu
-            var order = {
-                mPizzaS : 0,
-                mPizzaM : 0,
-                mPizzaL : 0,
-                pepperS:0,
-                pepperM:0,
-                pepperL:0,
-                stagioniS:0,
-                stagioniM:0,
-                stagioniL:0,
-                spicyS: 0,
-                spicyM: 0,
-                spicyL: 0
-
-            };
-           function update (order){
+            function order(){};
+            order.mPizzaS = 0;
+            order.mPizzaM = 0;
+            order.mPizzaL = 0;
+            order.pepperS = 0;
+            order.pepperM = 0;
+            order.pepperL = 0;
+            order.stagioniS = 0;
+            order.stagioniM = 0;
+            order.stagioniL = 0;
+            order.spicyS = 0;
+            order.spicyM = 0;
+            order.spicyL = 0;
+            order.drinkS = 0;
+            order.drinkM = 0;
+            order.drinkL = 0;
+            function update (order){
                $('marS').click(
                     +order.mPizzaS + +1
                );
@@ -420,6 +421,15 @@ and open the template in the editor.
                );
                $('spiceL').click(
                    +order.stagioniL + +1
+               );
+               $('drinkS').click(
+                   +order.drinkS + +1
+               );
+               $('drinkM').click(
+                   +order.drinkM + +1
+               );
+               $('drinkL').click(
+                   +order.drinkL + +1
                );
            }
         </script>
